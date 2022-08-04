@@ -57,7 +57,8 @@ public class LoginCommand extends Command {
 		String forward = Path.PAGE_ERROR_PAGE;
 
 		if (userRole == Role.ADMIN) {
-			forward = Path.COMMAND_LIST_ORDERS;
+			session.setAttribute("command", "listOrders");
+			forward = Path.CONTROLLER;
 		}
 
 		if (userRole == Role.CLIENT) {

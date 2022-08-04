@@ -18,5 +18,6 @@ public final class Path {
 	// commands
 	public static final String COMMAND_LIST_ORDERS = "/controller?command=listOrders";
 	public static final String COMMAND_LIST_MENU = "/controller?command=listMenu";
+	public static final String CONTROLLER = "/controller";
 
 }

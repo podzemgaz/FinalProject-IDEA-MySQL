@@ -9,8 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91db8fba-683c-4b99-a59e-0eb30acf645f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="91db8fba-683c-4b99-a59e-0eb30acf645f" name="Default Changelist" comment="13">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/filter/CommandAccessFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/filter/CommandAccessFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/list_orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/list_orders.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +94,7 @@
       <recent name="D:\worspaces\workspace\FinalProject-IDEA-MySQL\web\WEB-INF\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.65">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ua.nure.your_last_name.SummaryTask4.Test" />
       <module name="FinalProject-IDEA-MySQL" />
@@ -236,8 +242,16 @@
       <workItem from="1551640266457" duration="315000" />
       <workItem from="1659514256732" duration="8649000" />
       <workItem from="1659550147555" duration="4661000" />
-      <workItem from="1659556843164" duration="22194000" />
+      <workItem from="1659556843164" duration="29374000" />
     </task>
+    <task id="LOCAL-00001" summary="13">
+      <created>1659635755735</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659635755735</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -291,6 +305,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="13" />
+    <option name="LAST_COMMIT_MESSAGE" value="13" />
   </component>
   <component name="masterDetails">
     <states>

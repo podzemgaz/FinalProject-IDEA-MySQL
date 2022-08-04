@@ -45,7 +45,7 @@ public class Controller extends HttpServlet {
 		LOG.debug("Controller starts");
 
 		// extract command name from the request
-		String commandName = request.getParameter("command");
+		String commandName = (String)request.getSession().getAttribute("command");
 		LOG.trace("Request parameter: command --> " + commandName);
 
 		// obtain command object by its name
@@ -62,10 +62,18 @@ public class Controller extends HttpServlet {
 		LOG.trace("Forward address --> " + forward);
 
 		LOG.debug("Controller finished, now go to forward address --> " + forward);
-		
+
 		// go to forward
-		Thread.currentThread().getStackTrace();
-		request.getRequestDispatcher(forward).forward(request, response);
+		StackTraceElement[] stEls = Thread.currentThread().getStackTrace();
+		String methName = stEls[2].getMethodName();
+		LOG.debug("method name: " + methName);
+		if ("doPost".equals(methName)) {
+			forward = "/restaurant" + forward;
+			response.sendRedirect(forward);
+		} else if ("doGet".equals(methName)) {
+			request.getRequestDispatcher(forward).forward(request, response);
+		}
+
 	}
 
 }

@@ -29,10 +29,9 @@ public class CommandAccessFilter implements Filter {
 	private static final Logger LOG = Logger.getLogger(CommandAccessFilter.class);
 
 	// commands access	
-	private Map<Role, List<String>> accessMap = new HashMap<Role, List<String>>();
-	private List<String> commons = new ArrayList<String>();	
-	private List<String> outOfControl = new ArrayList<String>();
-	private Calendar calendar = new GregorianCalendar();
+	private final Map<Role, List<String>> accessMap = new HashMap<>();
+	private List<String> commons = new ArrayList<>();
+	private List<String> outOfControl = new ArrayList<>();
 	
 	public void destroy() {
 		LOG.debug("Filter destruction starts");
@@ -60,7 +59,15 @@ public class CommandAccessFilter implements Filter {
 	private boolean accessAllowed(ServletRequest request) {
 			HttpServletRequest httpRequest = (HttpServletRequest) request;
 
-		String commandName = request.getParameter("command");
+			HttpSession session = httpRequest.getSession();
+			String command = request.getParameter("command");
+			LOG.debug("command in request: " + command);
+			if (command != null) {
+				LOG.debug("setting attribute `command` to session: " + command);
+				session.setAttribute("command" ,command);
+			}
+
+		String commandName = (String)((HttpServletRequest) request).getSession().getAttribute("command");
 		LOG.trace("command in filter: " + commandName);
 		if (commandName == null || commandName.isEmpty()) {
 			return false;
@@ -68,12 +75,6 @@ public class CommandAccessFilter implements Filter {
 		
 		if (outOfControl.contains(commandName)) {
 			return true;
-		}
-		
-		HttpSession session = httpRequest.getSession(false);
-		LOG.trace("session in filter: " + session);
-		if (session == null) {
-			return false;
 		}
 		
 		Role userRole = (Role)session.getAttribute("userRole");
@@ -87,7 +88,7 @@ public class CommandAccessFilter implements Filter {
 				|| commons.contains(commandName);
 	}
 
-	public void init(FilterConfig fConfig) throws ServletException {
+	public void init(FilterConfig fConfig) {
 		LOG.debug("Filter initialization starts");
 		
 		// roles
@@ -114,7 +115,7 @@ public class CommandAccessFilter implements Filter {
 	 * @return list of parameter values.
 	 */
 	private List<String> asList(String str) {
-		List<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<>();
 		StringTokenizer st = new StringTokenizer(str);
 		while (st.hasMoreTokens()) {
 			list.add(st.nextToken());

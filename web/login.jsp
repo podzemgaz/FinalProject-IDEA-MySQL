@@ -41,15 +41,18 @@ Hidden field. In the query it will act as command=login.
 The purpose of this to define the command name, which have to be executed 
 after you submit current form. 
 ===========================================================================--%> 
-					<input type="hidden" name="command" value="login"/>
-
+					<c:set scope="session" var="command" value="login"/>
 					<fieldset >
 						<legend>Login</legend>
-						<input name="login"/><br/>
+						<label>
+							<input name="login"/>
+						</label><br/>
 					</fieldset><br/>
 					<fieldset>
 						<legend>Password</legend>
-						<input type="password" name="password"/>
+						<label>
+							<input type="password" name="password"/>
+						</label>
 					</fieldset><br/>
 					
 					<input type="submit" value="Login">								
