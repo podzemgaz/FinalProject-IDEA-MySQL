@@ -68,7 +68,9 @@ public class Controller extends HttpServlet {
 		String methName = stEls[2].getMethodName();
 		LOG.debug("method name: " + methName);
 		if ("doPost".equals(methName)) {
-			forward = "/restaurant" + forward;
+			String path = getServletContext().getContextPath();
+			LOG.debug("context path: " + path);
+			forward = path + forward;
 			response.sendRedirect(forward);
 		} else if ("doGet".equals(methName)) {
 			request.getRequestDispatcher(forward).forward(request, response);

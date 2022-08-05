@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="FinalProject-IDEA-MySQL:Web exploded" />
+      <artifact name="FinalProject-IDEA-MySQL:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,13 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91db8fba-683c-4b99-a59e-0eb30acf645f" name="Default Changelist" comment="13">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/FinalProject_IDEA_MySQL_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/FinalProject_IDEA_MySQL_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject-IDEA-MySQL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject-IDEA-MySQL.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/filter/CommandAccessFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/nure/your_last_name/SummaryTask4/web/filter/CommandAccessFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/list_orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/list_orders.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +75,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/podze/IdeaProjects/cityLibrary",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -111,14 +110,14 @@
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="FinalProject-IDEA-MySQL:Web exploded">
+        <artifact name="FinalProject-IDEA-MySQL:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/restaurant" />
+            <option name="CONTEXT_PATH" value="/FinalProject_IDEA_MySQL_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="22dfbb3d-5b16-4e7c-a05b-e1a690aeab13" />
+        <option name="BASE_DIRECTORY_NAME" value="1c8625d7-783e-4dd7-b131-a2073ab95039" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -126,7 +125,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="60403" />
+        <option name="DEBUG_PORT" value="64082" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -191,7 +190,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="FinalProject-IDEA-MySQL:Web exploded" />
+          <artifact name="FinalProject-IDEA-MySQL:war exploded" />
         </option>
       </method>
     </configuration>
@@ -199,9 +198,7 @@
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/Restaurant" />
       <option name="docBase" value="$PROJECT_DIR$/web" />
-      <option name="envOptions">
-        <map />
-      </option>
+      <option name="envOptions" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
       <option name="tomcatInfo">
